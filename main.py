@@ -9,6 +9,7 @@ from api.routes import status
 from core.config import settings
 from services.rabbitmq_consumer import rabbitmq_consumer
 
+# Config logging
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
