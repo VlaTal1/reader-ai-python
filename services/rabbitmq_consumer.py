@@ -40,7 +40,7 @@ class RabbitMQConsumer:
                 )
 
                 self.queue = await self.channel.declare_queue(
-                    settings.rabbitmq_queue,
+                    settings.rabbitmq_request_queue,
                     durable=True
                 )
 
